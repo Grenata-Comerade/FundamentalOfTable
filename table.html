@@ -1,50 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="html,css,javascript" />
-    <meta name="author" content="Grenata" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-    <title>gatelink</title>
-  </head>
-  <nav>
-    <center><h1><font color="#00ff00">Manajemen Tabel</font></h1><hr>
-  </nav>
-  <body bgcolor="#00ffff">
-    <!-- Head Content -->
-    <center><table border="2" bgcolor="gray">
-      <tr bgcolor="gray">
-        <td bgcolor="#000000"><center><font color="#00ffff"><b>No</b></font></center></td>
-        <td bgcolor="#000000"><font color="#ffffff"><b>Nama</b></font></td>
-        <td bgcolor="#000000"><font color="#ffffff"><b>Alamat</b></font></td>
-        <td bgcolor="#000000"><font color="#ffffff"><b>Kota</b></font></td>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Training Code</title>
+</head>
+<body>
+  <!--Style region-->
+  <style>
+    h3, p {
+      text-align: center;
+      font-size: smaller;
+    }
+    table {
+      margin: auto;
+    }
+  </style>
+<!--endregion-->
+
+  <!--Table without Border-->
+   <h3 style="text-align: center;"><mark/>Table Without Cell And Columns</h3>
+  <table align="center">
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Alamat</th>
+    </tr>
+    <td>1</td>
+    <td>Fulan</td>
+    <td>Antah Berantah</td>
+    <tr>
+      <td>2</td>
+      <td>John Doe</td>
+      <td>Springfield</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Doe</td>
+      <td>Beacon.St</td>
+    </tr>
+  </table>
+  <p style="font-size: smaller;">1</p><hr> <!-- Halaman 1-->
+  <!--End Content-->
+
+  <!--Table With Border-->
+   <h3> <mark/>Table With Columns And Cell</h3>
+   <table border="1">
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Alamat</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Fulan</td>
+      <td>Antah Berantah</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>John Doe</td>
+      <td>Springfield</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Doe</td>
+      <td>Beacon.St</td>
+    </tr>
+   </table>
+   <p style="font-size: smaller;">2</p><hr>
+    <h3><mark/>Table Horizontal</h3>
+    <!--End Content-->
+    
+    <!--Table With Rowspan-->
+    <table border="1"> 
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Alamat</th>
       </tr>
       <tr>
-        <td bgcolor="#000000"><center><font color="#00ffff">1</font></center></td>
-        <td>Ali Ashadi</td>
-        <td>Jl. Rindu 31</td>
-        <td>Yogya</td>
+        <td>1</td>
+        <td>Fulan</td>
+        <td>Antah Berantah</td>
       </tr>
       <tr>
-        <td bgcolor="#000000"><center><font color="#00ffff">2</font></center></td>
-        <td>Erni Suwandi</td>
-        <td>Jl. Mawar 7</td>
-        <td>Yogya</td>
+        <td>2</td>
+        <td>John Doe</td>
+        <td>Springfield</td>
       </tr>
       <tr>
-        <td bgcolor="#000000"><center><font color="#00ffff">3</font></center></td>
-        <td>Kirana </td>
-        <td>Jl. Maharani II/12</td>
-        <td>Magelang</td>
+        <td>3</td>
+        <td>Jane Doe</td>
+        <td>Beacon.St</td>
+      </tr>
+    </table>
+    <p style="font-size: smaller;">3</p><hr>
+    
+    <!--Table Header With Colspan Attribute-->
+    <h3><mark/>Table With Colspan Attribute</h3> <!-- Information Title -->
+    <table border="1"> <!--Table -->
+      <tr>
+        <th colspan="3">Manajemen Kontak</th> <!--Zero Colspan Value--> 
       </tr>
       <tr>
-        <td bgcolor="#000000"><center><font color="#00ffff">4</font></center></td>
-        <td>Zaenal Mustafa</td>
-        <td>Jl. Kumara 89</td>
-        <td>Semarang</td>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Alamat</th>
       </tr>
-    </table></center>
+      <tr>
+        <td>1</td>
+        <td>Fulan</td>
+        <td>Antah Berantah</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>John Doe</td>
+        <td>Springfield</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jane Doe</td>
+        <td>Beacon.St</td>
+      </tr>
+    </table>
+    <p style="font-size: smaller;">4</p><hr> <!-- Page Number And Row Line-->
     <!-- End Content -->
+     
+    <!--Table Header With Rowspan Attribute-->
+    <h3><mark/>Table With Rowspan Attribute</h3>
+    <table border="1"> <!--Table -->
+      <tr>
+        <th colspan="4">Manajemen Kontak</th> 
+      </tr>
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th>Kelompok</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Fulan</td>
+        <td>Antah Berantah</td>
+        <td rowspan="3" align="center">A</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>John Doe</td>
+        <td>Springfield</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jane Doe</td>
+        <td>Beacon.St</td>
+      </tr>
+    </table>
+    <p style="font-size: smaller;">5</p><hr> <!-- Page Number And Row Line-->
+    <!-- End Content -->
+
+    <!-- #Ordered List Region -->
+    <h3><mark>Ordered List With Number, Alphabet, And Roman Style</mark></h3>
+    <ol>
+            <li>Test</li> 
+            <li>Test</li> 
+            <li>Test</li> 
+     <ol type="I">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+      <ol type="A">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+      <ol type="a">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+      <ol type="i">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ol>
+        </ol>
+      </ol>
+    </ol>
+  </ol>
+     <p>6</p><hr>
+     <h3><mark>Unordered List</mark></h3>
+      <ul>
+        <li>Test</li>
+         <li>Test</li>
+         <li>Test</li>
+         <ul>
+          <li>Test</li>
+          <li>Test</li> 
+          <li>Test</li>
+          <ul>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <ul style="list-style: none;">
+              <li>Test</li>
+              <li>Test</li>
+              <li>Test</li>
+            </ul>
+          </ul>
+         </ul>
+        </ul>
+     <p>7</p>
+    <!-- #endregion -->
   </body>
 </html>
