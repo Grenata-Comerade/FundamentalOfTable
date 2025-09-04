@@ -1,1 +1,2 @@
-<h1 text-align="center">Training Code</h1>
+<h1 align="center">Training Code</h1>
+
